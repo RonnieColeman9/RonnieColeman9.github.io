@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickWindows: Effortless Python & Essential App Installation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+            min-height: 100vh; /* Ensure body takes full viewport height */
+            display: flex;
+            flex-direction: column; /* Allow content to push footer down */
+        }
+        .section-padding {
+            padding: 4rem 1rem; /* Consistent padding for sections */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 6rem 2rem;
+            }
+        }
+        main {
+            flex-grow: 1; /* Allow main content to grow and push footer to bottom */
+            /* Removed flex and align-items here to allow vertical flow of sections */
+        }
+        /* Optional: Style for the logo image if needed */
+        .nav-logo {
+            height: 40px; /* Adjust as needed */
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <!-- Logo/Site Title -->
+            <!-- UPDATED: Replaced text with an image tag for the logo -->
+            <a href="#home" class="text-2xl font-bold text-indigo-600 flex items-center">
+                <img src="./images/quickwindows_logo.png" alt="QuickWindows Logo" class="nav-logo mr-2 rounded-md">
+                QuickWindows
+            </a>
+
+            <!-- Mobile Menu Button (kept in case more links are added later) -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-indigo-600 focus:outline-none focus:text-indigo-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default - can be removed if truly no other links) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white mt-2 border-t border-gray-200">
+            <!-- No links for now, but ready if needed -->
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section (Home) - Focused on QuickWindows' full capabilities -->
+        <section id="home" class="bg-gradient-to-br from-indigo-500 to-purple-600 text-white py-20 md:py-32 section-padding rounded-b-xl shadow-lg w-full">
+            <div class="flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-8">
+                <div class="md:w-1/2">
+                    <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+                        QuickWindows: <br class="hidden md:inline">Save Time. Install Everything.
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 opacity-90">
+                        Effortlessly install Python and all your essential apps like Chrome, Spotify, and more. Set up your Windows PC in minutes, not hours!
+                    </p>
+                    <div class="flex justify-center md:justify-start">
+                        <a href="YOUR_DOWNLOAD_LINK_HERE" class="bg-white text-indigo-600 hover:bg-gray-100 font-semibold py-4 px-10 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 text-lg md:text-xl">
+                            Download QuickWindows
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center items-center">
+                    <!-- Revamped SVG for a 'toolbox' or 'multi-app' feel -->
+                    <svg class="w-64 h-64 md:w-80 md:h-80 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1.586a1 1 0 00-.707.293l-4.414 4.414a1 1 0 01-.707.293h-1.586a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- How Does It Work Section -->
+        <section id="how-it-works" class="bg-white py-16 md:py-24 section-padding text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">How Does It Work? Simple. Fast. Done.</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 (Formerly Step 2) -->
+                <div class="p-6 rounded-lg shadow-md bg-gray-50 flex flex-col items-center">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">1. Download QuickWindows</h3>
+                    <p class="text-gray-600">Get the lightweight installer, pre-configured with your selections.</p>
+                </div>
+                <!-- Step 2 (Formerly Step 1) -->
+                <div class="p-6 rounded-lg shadow-md bg-gray-50 flex flex-col items-center">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">2. Select Your Apps</h3>
+                    <p class="text-gray-600">Choose Python and any other essential software you need from our curated list.</p>
+                </div>
+                <!-- Step 3 (Unchanged) -->
+                <div class="p-6 rounded-lg shadow-md bg-gray-50 flex flex-col items-center">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37a1.724 1.724 0 002.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">3. Enjoy Automated Setup</h3>
+                    <p class="text-gray-600">QuickWindows handles all installations silently, getting you ready to work or play.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose QuickWindows Section -->
+        <section id="why-choose" class="bg-white py-16 md:py-24 section-padding text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Why Choose QuickWindows?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Benefit 1 -->
+                <div class="p-6 rounded-lg shadow-md bg-gray-50 flex flex-col items-center text-center">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Save Precious Time</h3>
+                    <p class="text-gray-600">No more manual downloads or endless setup wizards. QuickWindows does the work for you!</p>
+                </div>
+                <!-- Benefit 2 -->
+                <div class="p-6 rounded-lg shadow-md bg-gray-50 flex flex-col items-center text-center">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2H12a2 2 0 00-2 2v-4m0 4h2m-2-4h-2m2 4v2m-2-6h4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Effortless Setup</h3>
+                    <p class="text-gray-600">Intuitive and straightforward. Get your new PC or virtual machine ready in a snap.</p>
+                </div>
+                <!-- Benefit 3 -->
+                <div class="p-6 rounded-lg shadow-md bg-gray-50 flex flex-col items-center text-center">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004 12m7-7v2m2-2h2M7 7H5m11 6a2 2 0 11-4 0 2 2 0 014 0zm-4 0v4m-1-4h-1m-4 5h-2a2 2 0 00-2 2v2m2-6h4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Always Up-to-Date</h3>
+                    <p class="text-gray-600">QuickWindows ensures you get the latest versions of your chosen applications.</p>
+                </div>
+                <!-- Benefit 4 -->
+                <div class="p-6 rounded-lg shadow-md bg-gray-50 flex flex-col items-center text-center">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 002.924 12c0 3.042 1.137 5.923 3.125 8.118a12.001 12.001 0 0017.587-8.118c0-3.042-1.137-5.923-3.125-8.118z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Safe & Reliable</h3>
+                    <p class="text-gray-600">Downloads directly from official sources, providing secure and trusted installations.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer with GitHub and Discord links -->
+    <footer class="bg-gray-800 text-white py-8 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="mb-4">
+                &copy; <span id="currentYearFooter"></span> QuickWindows. All rights reserved.
+            </p>
+            <div class="flex justify-center space-x-6 text-lg md:text-xl">
+                <!-- GitHub Link Placeholder -->
+                <a href="YOUR_GITHUB_LINK_HERE" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-400 transition-colors duration-300 font-semibold">
+                    GitHub
+                </a>
+                <!-- Discord Link Placeholder -->
+                <a href="YOUR_DISCORD_LINK_HERE" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-400 transition-colors duration-300 font-semibold">
+                    Discord
+                </a>
+            </div>
+            <p class="text-sm mt-4 opacity-75">
+                Simplify your Python journey and app installations on Windows.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Set the current year in the footer
+        document.getElementById('currentYearFooter').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle (kept, though no links in it for now)
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // IMPORTANT: Replace these placeholder URLs with your actual links!
+        document.querySelector('#home a').href = "YOUR_DOWNLOAD_LINK_HERE"; // e.g., "https://github.com/YourRepo/QuickWindows/releases/latest/download/QuickWindowsInstaller.exe"
+        document.querySelector('footer a:nth-of-type(1)').href = "YOUR_GITHUB_LINK_HERE"; // e.g., "https://github.com/YourRepo/QuickWindows"
+        document.querySelector('footer a:nth-of-type(2)').href = "YOUR_DISCORD_LINK_HERE"; // e.g., "https://discord.gg/YourInviteCode"
+    </script>
+</body>
+</html>
